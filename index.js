@@ -1,8 +1,9 @@
-const express = require('express')
-var cors = require('cors')
-const {CreateAgencyController} = require("./src/controllers/CreateAgencyController");
-const {CreateCustomerController} = require("./src/controllers/CreateCustomerController");
-const {RequestError} = require("./src/utils/RequestError");
+import express from 'express'
+import cors from 'cors'
+
+import CreateAgencyController from './src/controllers/CreateAgencyController.js'
+import CreateCustomerController from "./src/controllers/CreateCustomerController.js";
+import {RequestError} from "./src/utils/RequestError.js";
 const app = express()
 
 app.use(cors())

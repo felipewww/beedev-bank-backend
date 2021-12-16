@@ -1,11 +1,5 @@
-const knex = require("knex");
-const {BaseModel} = require("./BaseModel");
-const {CustomersModel} = require("./CustomersModel");
+import BaseModel from "./BaseModel.js";
 
-class AgencyModel extends BaseModel {
+export default class AgencyModel extends BaseModel {
     tableName = 'agency';
-}
-
-module.exports = {
-    AgencyModel
 }

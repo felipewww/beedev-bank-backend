@@ -1,6 +1,8 @@
-const {AgencyModel} = require("../models/AgencyModel");
+// const {AgencyModel} = require("../models/AgencyModel");
+// import AgencyModel from "../models/AgencyModel";
+import AgencyModel from "../models/AgencyModel.js";
 
-class CreateAgencyController {
+export default class CreateAgencyController {
     async create(number, address) {
         const agencyModel = new AgencyModel();
 
@@ -14,8 +16,4 @@ class CreateAgencyController {
 
         return createdAgency;
     }
-}
-
-module.exports = {
-    CreateAgencyController
 }
